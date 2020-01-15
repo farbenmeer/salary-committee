@@ -1,0 +1,8 @@
+dist
+node_modules
+tsconfig.tsbuildinfo
+coverage
+.env
+*.log
+
+colleagues.json

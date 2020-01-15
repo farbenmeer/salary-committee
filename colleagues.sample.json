@@ -1,0 +1,14 @@
+{
+  "colleagues": [
+    {
+      "name": "Maxi Musterfrau",
+      "sex": "female",
+      "joinedAt": "30/12/2018"
+    },
+    {
+      "name": "Max Mustermann",
+      "sex": "male",
+      "joinedAt": "30/01/2020"
+    }
+  ]
+}
