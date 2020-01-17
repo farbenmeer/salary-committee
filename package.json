@@ -5,14 +5,56 @@
   "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "start": "node index.js"
+    "test": "xo && jest",
+    "start": "node index.js",
+    "lint": "xo",
+    "fix": "xo --fix"
   },
-  "author": "Tobias Linkohr - farbenmeer GmbH",
+  "author": {
+    "name": "Tobias Linkohr",
+    "email": "tobias.linkohr@farbenmeer.de",
+    "url": "https://farbenmeer.de/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farbenmeer/salary-committee.git"
+  },
+  "bugs": {
+    "url": "https://github.com/farbenmeer/salary-committee/issues"
+  },
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*": [
+      "npm run fix ",
+      "git add"
+    ]
+  },
+  "xo": {
+    "rules": {
+      "import/extensions": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.test.js"
+        ],
+        "rules": {
+          "no-undef": "off"
+        }
+      }
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
-    "jest": "^24.9.0"
+    "husky": "^4.0.10",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "xo": "^0.25.3"
   }
 }
