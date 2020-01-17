@@ -6,7 +6,7 @@ This is a lottery system to define people for the salary committee on the basis 
 
 We at [farbenmeer](https://farbenmeer.de/) decided to use a random picked committee to calculate the possible salarys for each colleague and to decide if the desired salary of one person is fair.
 
-This tool is responsible for the random pick of those persons. To garantee the diversity of the committee, we impemented a criteria system. You can decide the minimum ammount of male and female persons also as the minimum ammount of people who worked longer then a year in the company.
+This tool is responsible for the random pick of those persons. To guarantee the diversity of the committee, we implemented a criteria system. You can decide the minimum amount of male and female persons also as the minimum amount of people who worked longer than a year in the company.
 
 ## Criteria
 
