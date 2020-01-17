@@ -11,7 +11,7 @@ This tool is responsible for the random pick of those persons. To guarantee the 
 ## Criteria
 
 
-| Name              | Type          | Default |Description                           |
+| Name              | Type          | Default | Description                           |
 | ----------------- | ------------- | -----   | ------------------------------------| 
 | male              | number        | 1       | Minimum male people in the committee |
 | female            | number        | 1       | Minimum female people in the committee |
