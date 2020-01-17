@@ -1,6 +1,6 @@
 # Salary committee
 
-This is a lottery system to define people for the salary committee on the basis of the definied criterias.
+This is a lottery system to define people for the salary committee on the basis of the defined criterias.
 
 ## What's that exactly?
 
