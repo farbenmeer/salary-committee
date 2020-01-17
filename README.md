@@ -15,7 +15,7 @@ This tool is responsible for the random pick of those persons. To guarantee the 
 | ----------------- | ------------- | -----   | ------------------------------------| 
 | male              | number        | 1       | Minimum male people in the committee |
 | female            | number        | 1       | Minimum female people in the committee |
-| longTermColleague | number        | 1       | Minimum long term people in the committee (more then 1 year)|
+| longTermColleague | number        | 1       | Minimum long term people in the committee (more than 1 year) |
 
 ## Data / colleagues
 
