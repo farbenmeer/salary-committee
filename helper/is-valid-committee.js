@@ -1,4 +1,4 @@
-import {isLongerThenAYear} from './is-longer-then-a-year.js';
+import {isLongerThanAYear} from './is-longer-than-a-year.js';
 
 const isValidCommittee = (selectedColleagues, female = 1, male = 1, longTermColleague = 1) => {
 	const conditions = {female, male, longTermColleague};
@@ -7,13 +7,9 @@ const isValidCommittee = (selectedColleagues, female = 1, male = 1, longTermColl
 	selectedColleagues.forEach(colleague => {
 		const {sex, joinedAt} = colleague;
 
-		if (sex === 'male') {
-			counter.male += 1;
-		} else if (sex === 'female') {
-			counter.female += 1;
-		}
+		counter[sex] += 1;
 
-		if (isLongerThenAYear(joinedAt)) {
+		if (isLongerThanAYear(joinedAt)) {
 			counter.longTermColleague += 1;
 		}
 	});
