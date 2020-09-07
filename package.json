@@ -29,10 +29,7 @@
     }
   },
   "lint-staged": {
-    "./**/*": [
-      "npm run fix ",
-      "git add"
-    ]
+    "./**/*": ["npm run fix"]
   },
   "xo": {
     "rules": {
