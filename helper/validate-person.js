@@ -11,7 +11,7 @@ const validatePerson = ({name, sex, joinedAt}) => {
 		throw new Error(`There is no date set for "${name}"`);
 	}
 
-	if (!/\d{1,2}\/\d{1,2}\/\d{4}/.test(joinedAt)) {
+	if (!/(?:\d{1,2}\/){2}\d{4}/.test(joinedAt)) {
 		throw new Error(`Date is invalid for "${name}". Format should be in format "mm/dd/yyyy"`);
 	}
 };
