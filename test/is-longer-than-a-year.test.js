@@ -1,4 +1,4 @@
-import {isLongerThanAYear} from '../helper/is-longer-than-a-year';
+import {isLongerThanAYear} from '../helper/is-longer-than-a-year.js';
 
 test('should return false for today', () => {
 	const dateNow = new Date();

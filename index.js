@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 
 import {getRandomColleagues} from './helper/get-random-colleagues.js';
 import {validatePerson} from './helper/validate-person.js';
@@ -7,7 +7,9 @@ import {isValidCommittee} from './helper/is-valid-committee.js';
 const {colleagues} = JSON.parse(fs.readFileSync('./colleagues.json'));
 
 // Validate all colleagues
-colleagues.forEach(colleague => validatePerson(colleague));
+for (const colleague of colleagues) {
+	validatePerson(colleague);
+}
 
 // Start lottery
 let randomPeople = [];

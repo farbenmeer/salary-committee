@@ -1,4 +1,4 @@
-import {getRandomColleagues} from '../helper/get-random-colleagues';
+import {getRandomColleagues} from '../helper/get-random-colleagues.js';
 
 test('should return 3 random items', () => {
 	const result = getRandomColleagues([1, 2, 3, 4, 5, 6]);

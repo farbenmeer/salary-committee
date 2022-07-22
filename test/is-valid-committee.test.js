@@ -1,11 +1,11 @@
-import {isValidCommittee} from '../helper/is-valid-committee';
+import {isValidCommittee} from '../helper/is-valid-committee.js';
 
 describe('should return false', () => {
 	test('only male colleagues', () => {
 		const colleagues = [
 			{name: 'XYZ', sex: 'male', joinedAt: '04/01/2010'},
 			{name: 'XYZ', sex: 'male', joinedAt: '01/01/2010'},
-			{name: 'XYZ', sex: 'male', joinedAt: '04/01/2010'}
+			{name: 'XYZ', sex: 'male', joinedAt: '04/01/2010'},
 		];
 
 		const result = isValidCommittee(colleagues);
@@ -16,7 +16,7 @@ describe('should return false', () => {
 		const colleagues = [
 			{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'},
 			{name: 'XYZ', sex: 'female', joinedAt: '01/01/2010'},
-			{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'}
+			{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'},
 		];
 
 		const result = isValidCommittee(colleagues);
@@ -30,7 +30,7 @@ describe('should return false', () => {
 		const colleagues = [
 			{name: 'XYZ', sex: 'male', joinedAt},
 			{name: 'XYZ', sex: 'female', joinedAt},
-			{name: 'XYZ', sex: 'female', joinedAt}
+			{name: 'XYZ', sex: 'female', joinedAt},
 		];
 
 		const result = isValidCommittee(colleagues);
@@ -41,7 +41,7 @@ describe('should return false', () => {
 		const colleagues = [
 			{name: 'XYZ', sex: 'male', joinedAt: '04/01/2010'},
 			{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'},
-			{name: 'XYZ', sex: 'female', joinedAt: '04/01/2999'}
+			{name: 'XYZ', sex: 'female', joinedAt: '04/01/2999'},
 		];
 
 		const result = isValidCommittee(colleagues, 2, 1, 3);
@@ -56,7 +56,7 @@ describe('should return true', () => {
 		{name: 'XYZ', sex: 'male', joinedAt: '04/01/2010'},
 		{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'},
 		{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'},
-		{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'}
+		{name: 'XYZ', sex: 'female', joinedAt: '04/01/2010'},
 	];
 	test('for min. 1 female, min. 1 male, min. 1 longTermColleague', () => {
 		const result = isValidCommittee(colleagues);
