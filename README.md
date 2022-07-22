@@ -10,29 +10,28 @@ This tool is responsible for the random pick of those persons. To guarantee the 
 
 ## Criteria
 
-
-| Name              | Type          | Default | Description                           |
-| ----------------- | ------------- | -----   | ------------------------------------| 
-| male              | number        | 1       | Minimum male people in the committee |
-| female            | number        | 1       | Minimum female people in the committee |
-| longTermColleague | number        | 1       | Minimum long term people in the committee (more than 1 year) |
+| Name              | Type   | Default | Description                                                  |
+| ----------------- | ------ | ------- | ------------------------------------------------------------ |
+| male              | number | 1       | Minimum male people in the committee                         |
+| female            | number | 1       | Minimum female people in the committee                       |
+| longTermColleague | number | 1       | Minimum long term people in the committee (more than 1 year) |
 
 ## Data / colleagues
 
-Rename `colleagues.sample.json` to `colleagues.js` and replace the example data with your colleagues. 
+Rename `colleagues.sample.json` to `colleagues.js` and replace the example data with your colleagues.
 
 ## Start
 
 To start the lottery and get the colleagues for the committee, type following in the console:
 
 ```
-npm start
+yarn start
 ```
 
-## Test 
+## Test
 
 The lottery is well tested with jest. To start the tests type:
 
 ```
-npm test
+yarn test
 ```

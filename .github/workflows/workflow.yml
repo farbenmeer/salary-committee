@@ -11,13 +11,13 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v1
 
-      - name: Set Node.js 13.x
+      - name: Set Node.js 16.x
         uses: actions/setup-node@master
         with:
-          node-version: 13.x
+          node-version: 16.x
 
       - name: Run install
-        run: npm install
+        run: yarn install
 
       - name: Run test
-        run: npm run test
+        run: yarn run test
